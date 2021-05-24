@@ -21,6 +21,12 @@ h3 {
   font-size: clamp(26px, 3vw, 40px);
 }
 
+h4 {
+  font-size: clamp(20px, 1.6vw, 30px);
+  line-height: 32px;
+}
+
+
 p {
   font-size: clamp(1rem, 1.2vw, 2em);
   line-height: clamp(20px, 30px, 55px);
@@ -718,6 +724,293 @@ iframe {
 
 }
 
+/* end of bottom line */
+
+/* start of logos */
+
+.logos-container {
+  padding-top: 50px;
+}
+
+.logos-container__heading {
+  display: flex;
+  justify-content: center;
+
+}
+
+.logos-container__heading span{
+  color: #FB5700;
+  padding-left: 7px;
+}
+
 /* orange color #FB5700 */
 /* purple color #1B325F */
 /* text color #828282 */
+
+@media only screen and (max-width: 868px) {
+  .logos-container {
+  display: none;
+  }
+}
+
+@media only screen and (min-width: 868px) {
+.logos-container-mobile {
+  display: none;
+}
+}
+
+
+.carousel.two {
+  width: 90%;
+  height: 150px;
+  margin: 0 auto;
+  background: none;
+}
+
+.carousel.two::before {
+  content: '';
+  position: relative;
+}
+
+.carousel-cell.two{
+  width: 15%;
+  height: 100px;
+  border-radius: 5px;
+  z-index: 1;
+  min-height: 0px;
+}
+
+.logos-container-mobile .carousel-cell.two {
+  width: 50%;
+}
+
+.carousel-cell.two img {
+  z-index: 999;
+  object-position: center;
+  object-fit: contain;
+  padding-bottom: 15px;
+}
+
+.carousel-cell.two.is-selected {
+  background: white;
+  box-shadow: 0px 20px 50px 0px #0711740D;
+  z-index: 1;
+
+}
+
+
+
+/* cell number */
+.carousel-cell.two:before {
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+
+.two .flickity-viewport {
+  height: 100px!important;
+  min-height: 0px;
+}
+
+
+
+/* end of logos-container */
+
+/* start of blog */
+.blog-container {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.blog-container__info__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+@media only screen and (max-width: 868px) {
+  .blog-container__info__container {
+    flex-direction: column;
+
+  }
+}
+
+.blog-container__heading span{
+color: #FB5700;
+
+}
+
+.blog-container__info {
+  width: 30%;
+}
+
+@media only screen and (max-width: 868px) {
+  .blog-container__info {
+    width: 90%;
+    padding-bottom: 30px;
+  }
+  
+
+}
+
+.blog-container__info__image {
+  border-radius: 10px;
+  width: 90%;
+}
+
+@media only screen and (max-width: 868px) {
+  .blog-container__info__image {
+    width: 100%;
+  }
+  
+
+}
+
+.blog-container__info__details {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog-container__info__name {
+  margin-top: 5px;
+}
+
+.blog-container__info__date {
+  margin-top: 5px;
+  padding-left: 30px;
+}
+
+
+.blog-container__info__name img {
+  width: 15px;
+  padding-right: 10px;
+}
+
+.blog-container__info__date img {
+  width: 15px;
+}
+
+.blog-container__info__text__heading {
+  color: black;
+  margin-top: 0px;
+}
+
+/* end of blog */
+
+/* start of contact  */
+
+
+.contact-container {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+/* end of contact */
+
+
+/* start of footer */
+
+.footer-container {
+  width: 100%;
+  min-height: 70vh;
+  background: #1b325f;
+  border-radius: 90% 90% 0 0 / 200px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.footer-container__holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+
+}
+
+.footer-container__about {
+  width: 30%;
+
+}
+
+.footer-container__about__heading {
+  font-size: 24px;
+}
+
+.footer-container__about__body {
+  color: white;
+  margin: 0;
+}
+
+.footer-container__information {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: centfer;
+  align-items: center;
+}
+
+.footer-container__about__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+
+}
+
+.footer-container__about__nav li {
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.footer-container__contact {
+  width: 30%;
+
+}
+
+.footer-container__contact__image {
+  background: #FB5700
+  ;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.footer-container__contact__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container__contact__text {
+  color: white;
+  margin: 0;
+  padding-bottom: 20px;
+
+}
+
+.footer-container__bottom {
+  border-top: 1px solid white;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.footer-container__bottom__text {
+  color: white;
+}
